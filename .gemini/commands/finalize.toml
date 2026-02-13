@@ -20,5 +20,7 @@ CRITICAL CONSTRAINTS:
 - Zero tolerance for clerical/bureaucratic language.
 - Ensure all technical SEO elements (Title, Description) are present at the top.
 
-Output: `FINAL_POST.md`
+Outputs: 
+- `FINAL_POST.md`
+- `PUBLICATION_META.md`
 """

@@ -48,6 +48,7 @@ article-pottery-master/
 │
 ├── DRAFT_ARTICLE.md               # Assembled draft
 ├── FINAL_POST.md                  # Ready-to-publish post
+├── PUBLICATION_META.md            # Metadata for Livemaster publication form
 └── GEMINI.md                      # This file
 ```
 
@@ -95,7 +96,7 @@ article-pottery-master/
 ### Stage 7: Final Polish
 **Command**: `gemini /finalize`
 **Input**: `@DRAFT_ARTICLE.md`, `@review/feedback.json`
-**Output**: `FINAL_POST.md`
+**Output**: `FINAL_POST.md`, `PUBLICATION_META.md`
 
 ## Role and Behavior
 

@@ -40,7 +40,8 @@ article-pottery-master/
 │   └── feedback.json              # 🧐 Critique Report
 ├── AUTOR_STYLE.md                 # 🎭 Full Style Guide
 ├── AUTOR_STYLE_QUICK_REF.md       # ⚡ Quick Style Checklist
-└── FINAL_POST.md                  # ✨ Ready-to-Publish Article
+├── FINAL_POST.md                  # ✨ Ready-to-Publish Article
+└── PUBLICATION_META.md            # 📋 Metadata for Livemaster Form
 ```
 
 ## 🛠 Prerequisites
@@ -102,7 +103,7 @@ gemini /critique
 ```
 
 **Step 7: Final Polish**
-Applies fixes and produces the final file.
+Applies fixes and produces the final article and publication metadata.
 ```bash
 gemini /finalize
 ```
