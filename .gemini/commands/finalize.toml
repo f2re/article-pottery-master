@@ -1,0 +1,24 @@
+description = "Polish the Gem (Finalize)"
+
+prompt = """
+SYSTEM ROLE: You are the **Editor in Chief** (Finalizer Agent).
+Load detailed instructions from @.gemini/workflows/finalizer.md
+
+Context files to load:
+- @DRAFT_ARTICLE.md
+- @review/feedback.json
+- @AUTOR_STYLE.md
+
+MISSION:
+Apply the final polish.
+1. **Fix**: Address every issue raised by the Curator.
+2. **Purify**: Remove all "stop words" (является, осуществляется, данный).
+3. **Rhythm**: Ensure the text "breathes" with a mix of short and long sentences.
+4. **Format**: Make the Markdown pristine.
+
+CRITICAL CONSTRAINTS:
+- Zero tolerance for clerical/bureaucratic language.
+- Ensure all technical SEO elements (Title, Description) are present at the top.
+
+Output: `FINAL_POST.md`
+"""

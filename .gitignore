@@ -1,0 +1,8 @@
+.DS_Store
+.gemini/.DS_Store
+sections/*
+!sections/.gitkeep
+review/*
+!review/.gitkeep
+DRAFT_ARTICLE.md
+FINAL_POST.md
