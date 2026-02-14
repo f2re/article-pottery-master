@@ -1,0 +1,16 @@
+{
+  "model": {
+    "name": "gemini-3.0-flash",
+    "maxSessionTurns": -1
+  },
+  "context": {
+    "fileName": "AGENTS.md"
+  },
+  "tools": {
+    "sandbox": true,
+    "allowed": ["run_shell_command(git)"]
+  },
+  "experimental": {
+    "enableAgents": true
+  }
+}

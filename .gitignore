@@ -6,3 +6,5 @@ review/*
 !review/.gitkeep
 DRAFT_ARTICLE.md
 FINAL_POST.md
+PUBLICATION_META.md
+input/topic.txt
