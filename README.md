@@ -1,130 +1,105 @@
-# 🏺 Pottery Writer: Master of Form and Word
+# 🏯 Мастерская Керамики: Мульти-Агентная Система
 
-An automated, artistic writing system designed to craft high-quality, SEO-optimized, and emotionally engaging articles for **Livemaster (Ярмарка Мастеров)**.
+**Pottery Master** — это продвинутая система генерации контента, созданная для написания глубоких, атмосферных и SEO-оптимизированных статей о японской и китайской керамике.
 
-Focused on **Japanese and Chinese ceramics** (Kaneo Masanao, Chawan, Raku), this system adopts the persona of a "Master" — using rich sensory language, philosophical depth (Wabi-sabi, Zen), and strict technical adherence to the platform's requirements.
-
-## 🚀 Features
-
--   **✍️ Artistic Persona**: Writes not just text, but "sculpts" stories using tactile and visual language.
--   **🔍 SEO-First**: Automatically generates H1, SEO Titles, Descriptions, and selects correct Rubric codes.
--   **🎨 Image Prompting**: Analyzes text to suggest "juicy", textural visuals and captions.
--   **🛡️ Quality Control**: Built-in "Critic" agent that rates "Juiciness" and "Novelty" before finalizing.
--   **🧱 Modular Workflow**: Step-by-step generation from Hook to Conclusion to Final Polish.
-
-## 📂 System Structure
-
-```
-article-pottery-master/
-├── .gemini/
-│   ├── commands/                  # 🤖 Agents (Slash Commands)
-│   │   ├── article-searcher.toml  # /article-searcher
-│   │   ├── write-hook.toml        # /write-hook
-│   │   ├── write-body.toml        # /write-body
-│   │   ├── write-conclusion.toml  # /write-conclusion
-│   │   ├── find-images.toml       # /find-images
-│   │   ├── assemble.toml          # /assemble
-│   │   ├── critique.toml          # /critique
-│   │   └── finalize.toml          # /finalize
-│   └── workflows/                 # 📜 Detailed Instructions
-├── input/
-│   └── topic.txt                  # Your article topic
-├── sections/                      # 🧩 Generated Parts
-│   ├── research_materials.md      # 🔍 Cultural/Technical context
-│   ├── 01_hook.md
-│   ├── 02_body.md
-│   ├── 03_conclusion.md
-│   └── images.md
-├── DRAFT_ARTICLE.md               # 📝 Assembled Draft
-├── review/
-│   └── feedback.json              # 🧐 Critique Report
-├── AUTOR_STYLE.md                 # 🎭 Full Style Guide
-├── AUTOR_STYLE_QUICK_REF.md       # ⚡ Quick Style Checklist
-├── FINAL_POST.md                  # ✨ Ready-to-Publish Article
-└── PUBLICATION_META.md            # 📋 Metadata for Livemaster Form
-```
-
-## 🛠 Prerequisites
-
--   **Gemini CLI**: This project is built to run on the Gemini CLI environment.
--   **Topic**: A clear idea of what you want to write about (e.g., "Raku firing techniques", "The philosophy of the tea bowl").
-
-## 📖 How to Use
-
-### 1. Set the Topic
-Create a file at `input/topic.txt` with your subject.
-```bash
-echo "Японские чаши Тяван и философия Ваби-Саби" > input/topic.txt
-```
-
-### 2. Run the Workflow
-Execute the commands sequentially to build the article.
-
-**Step 0: Research**
-The "Cultural Archeologist" digs deep into Japanese/Chinese sources.
-```bash
-gemini /article-searcher
-```
-
-**Step 1: The Hook**
-Generates the Title, SEO data, and the sensory opening.
-```bash
-gemini /write-hook
-```
-
-**Step 2: The Body**
-Writes the main content, diving into history, technique, and aesthetics.
-```bash
-gemini /write-body
-```
-
-**Step 3: The Conclusion**
-Adds the emotional summary and Call to Action.
-```bash
-gemini /write-conclusion
-```
-
-**Step 4: Visuals**
-Finds or generates prompts for images to accompany the text.
-```bash
-gemini /find-images
-```
-
-**Step 5: Assembly**
-Stitches everything together into a draft.
-```bash
-gemini /assemble
-```
-
-**Step 6: Critique**
-The "Gallery Curator" reviews the draft for style and SEO.
-```bash
-gemini /critique
-```
-
-**Step 7: Final Polish**
-Applies fixes and produces the final article and publication metadata.
-```bash
-gemini /finalize
-```
-
-### 3. Publish
-Open `FINAL_POST.md`, copy the content, and paste it into the Livemaster editor.
-
-## 🎭 The Persona: "Master of Form and Word"
-
-The system is tuned to avoid dry, encyclopedic language. Instead of:
-> *"This bowl is made of clay and fired at 1200 degrees."*
-
-It writes:
-> *"This bowl was born from the rough earth, tempered by a fire that remembers the breath of the kiln..."*
-
-See `AUTOR_STYLE.md` for the full style guide.
-
-## 🔧 Customization
-
--   **Style**: Edit `AUTOR_STYLE.md` to tweak the voice.
--   **Workflow**: Modify files in `.gemini/workflows/` to change specific agent behaviors.
+Система работает как **Мульти-Агентная Команда**, где специализированные «персоны» (Агенты) отвечают за разные этапы творческого процесса — от исторических раскопок до кинематографичной арт-дирекции.
 
 ---
-*Created for the true connoisseurs of ceramics.*
+
+## 👥 Команда Мастеров (Агенты)
+
+В этой мастерской работают 8 специализированных агентов. Чтобы активировать нужного специалиста, используйте его имя (хэндл) в чате.
+
+| Агент | Хэндл | Роль | Специализация |
+| :--- | :--- | :--- | :--- |
+| **Археолог** | `@archeologist` | Исследователь | Глубокая история, терминология, факты. Ищет «правду» глины. |
+| **Каллиграф** | `@calligrapher` | Автор Вступления | Сенсорные хуки, SEO-заголовки. «Вдох перед глотком чая». |
+| **Скульптор** | `@sculptor` | Автор Основы | Сильные глаголы, ритм повествования. Технические детали без сухости. |
+| **Чайный Мастер** | `@tea-master` | Автор Заключения | Эмоциональное послевкусие, Дзен, мягкие призывы к действию (CTA). |
+| **Визуальный Директор** | `@visual-director` | Арт-директор | Кинематографичные промпты для нейросетей. «Вайб» превыше всего. |
+| **Обжигальщик** | `@kiln-master` | Сборщик | Собирает все части в единый черновик. Управляет «обжигом». |
+| **Куратор Галереи** | `@gallery-curator` | Критик | Аудит стиля. Ищет «сахарность» и лишние слова. Оценка Ваби-Саби. |
+| **Главный Редактор** | `@editor-in-chief` | Финализатор | Типографика, метаданные, финальная полировка. |
+
+---
+
+## 🎻 Как использовать (Оркестрация)
+
+Вы выступаете в роли **Оркестратора**. Ваша задача — направлять агентов по этапам создания статьи, подобно тому, как создается чаша: от добычи глины до финального обжига.
+
+### 1. Подготовка (Глина)
+Задайте тему статьи в файле `input/topic.txt`.
+```bash
+echo "Чаша Раку и философия несовершенства" > input/topic.txt
+```
+
+### 2. Процесс (Церемония)
+Следуйте плану, вызывая агентов по очереди:
+
+#### **Этап 1: Раскопки (Research)**
+Соберите факты и контекст.
+*   **Команда:** `@archeologist проанализируй тему и собери факты`
+*   **Результат:** Файл `sections/research_materials.md`
+
+#### **Этап 2: Формовка (Drafting)**
+Создайте текст по частям.
+1.  **Вступление:**
+    *   **Команда:** `@calligrapher напиши вступление и SEO`
+    *   **Результат:** Файл `sections/01_hook.md`
+2.  **Основная часть:**
+    *   **Команда:** `@sculptor напиши основную часть статьи`
+    *   **Результат:** Файл `sections/02_body.md`
+3.  **Заключение:**
+    *   **Команда:** `@tea-master напиши заключение`
+    *   **Результат:** Файл `sections/03_conclusion.md`
+
+#### **Этап 3: Глазурь (Visuals)**
+Создайте визуальный стиль.
+*   **Команда:** `@visual-director создай промпты для изображений`
+*   **Результат:** Файл `sections/images.md` (Промпты для Midjourney/Stable Diffusion)
+
+#### **Этап 4: Обжиг и Полировка (Assembly & Polish)**
+Соберите, проверьте и выпустите статью.
+1.  **Сборка:**
+    *   **Команда:** `@kiln-master собери черновик`
+    *   **Результат:** Файл `DRAFT_ARTICLE.md`
+2.  **Критика:**
+    *   **Команда:** `@gallery-curator проверь текст на стиль и вайб`
+    *   **Результат:** Отчет о качестве текста (Critique Report)
+3.  **Финал:**
+    *   **Команда:** `@editor-in-chief подготовь к публикации`
+    *   **Результат:** Файл `FINAL_POST.md` (Готовая статья)
+
+---
+
+## 📂 Структура Проекта
+
+```text
+article-pottery-master/
+├── .gemini/
+│   ├── agents/                # 🧠 Инструкции Агентов
+│   │   ├── plans/             # 🗺️ Планы статей
+│   │   ├── tasks/             # ✅ Активные задачи
+│   │   └── logs/              # 📜 Логи работы
+│   ├── commands/              # ⚡ Быстрые команды (Legacy)
+│   └── workflows/             # 🌊 Рабочие процессы
+├── input/
+│   └── topic.txt              # 🎯 Тема статьи
+├── sections/                  # 🧱 Модульные блоки контента
+│   ├── research_materials.md  # 🔍 Исследование
+│   ├── 01_hook.md             # 🎣 Вступление
+│   ├── 02_body.md             # 📖 Основная часть
+│   ├── 03_conclusion.md       # 🍵 Заключение
+│   └── images.md              # 📸 Промпты для изображений
+├── AGENTS.md                  # 🤖 Реестр агентов
+├── AUTOR_STYLE.md             # 🎨 Глобальный стиль автора
+└── README.md                  # 📘 Эта инструкция
+```
+
+## 🎨 Философия Мастерской
+*   **VIBE FIRST (Вайб прежде всего)**: Мы не просто пишем текст, мы передаем состояние (Спокойствие, Одиночество, Драма).
+*   **ANTI-SUGAR (Без сахара)**: Никаких сладких прилагательных ("восхитительный", "прекрасный"). Используйте фактуру: "шероховатый", "обожженный", "ледяной".
+*   **MA (間)**: Уважайте пустоту. Пауза так же важна, как и слово.
+
+---
+*System v2.0 "Pottery Master"*
