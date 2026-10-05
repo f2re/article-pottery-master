@@ -8,3 +8,12 @@ DRAFT_ARTICLE.md
 FINAL_POST.md
 PUBLICATION_META.md
 input/topic.txt
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+dist/
+.env
+.env.*
+!.env.example
+.gemini/settings.local.json

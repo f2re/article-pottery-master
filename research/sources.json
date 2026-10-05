@@ -1,0 +1,123 @@
+[
+  {
+    "id": "JP01",
+    "title": "樂焼の発祥",
+    "publisher": "Raku Museum",
+    "language": "ja",
+    "url": "https://www.raku-yaki.or.jp/history/index.html",
+    "access": "fulltext",
+    "use": "История раку в изложении профильного музея; сохранять предположительный характер атрибуций.",
+    "limit": "Не обобщать на всю японскую культуру; не выводить свойства современных изделий.",
+    "checked_on": "2026-10-05"
+  },
+  {
+    "id": "JP02",
+    "title": "長次郎赤楽茶碗 銘 夕暮",
+    "publisher": "Gotoh Museum",
+    "language": "ja",
+    "url": "https://www.gotoh-museum.or.jp/2020/10/06/02-005/",
+    "access": "object",
+    "use": "Описание формы, размеров и музейной атрибуции конкретной чаши.",
+    "limit": "Формулировка о традиционном приписывании работы не равна установленному авторству. Права на фотографии отдельно.",
+    "checked_on": "2026-10-05"
+  },
+  {
+    "id": "CN01",
+    "title": "宜兴窑冰心道人款紫砂圆壶",
+    "publisher": "Palace Museum",
+    "language": "zh",
+    "url": "https://www.dpm.org.cn/collection/ceramic/227205.html",
+    "access": "object",
+    "use": "Описание формы, надписей и материала конкретного чайника.",
+    "limit": "Не смешивать основной текст с автоматическим словарём: подсказка к 宜兴 содержит биографию человека. Права на фото не проверены.",
+    "checked_on": "2026-10-05",
+    "author": "高晓然"
+  },
+  {
+    "id": "SC01",
+    "title": "Glazes induced degradation of tea catechins",
+    "publisher": "Scientific Reports",
+    "language": "en",
+    "url": "https://www.nature.com/articles/s41598-023-37480-8",
+    "doi": "10.1038/s41598-023-37480-8",
+    "published_on": "2023-06-28",
+    "access": "fulltext",
+    "use": "Методика взаимодействия глазури и настоя: раздел Methods.",
+    "limit": "Не бытовое испытание готовой посуды. Не доказательство пользы, вреда или улучшения вкуса.",
+    "correction": "SC02",
+    "checked_on": "2026-10-05",
+    "authors": [
+      "Yunzi Xin",
+      "Sota Shido",
+      "Kunihiko Kato",
+      "Takashi Shirai"
+    ]
+  },
+  {
+    "id": "SC02",
+    "title": "Author Correction: Glazes induced degradation of tea catechins",
+    "publisher": "Scientific Reports",
+    "language": "en",
+    "url": "https://www.nature.com/articles/s41598-023-39072-y",
+    "doi": "10.1038/s41598-023-39072-y",
+    "published_on": "2023-07-25",
+    "access": "fulltext",
+    "use": "Исправление обозначения Co/Mg в первоначальном PDF.",
+    "limit": "Не отдельное независимое исследование.",
+    "checked_on": "2026-10-05",
+    "authors": [
+      "Yunzi Xin",
+      "Sota Shido",
+      "Kunihiko Kato",
+      "Takashi Shirai"
+    ]
+  },
+  {
+    "id": "SC03",
+    "title": "Analysis of lipophilic compounds of tea coated on the surface of clay teapots",
+    "publisher": "Journal of Food and Drug Analysis",
+    "language": "en",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1021949814000945",
+    "doi": "10.1016/j.jfda.2014.05.005",
+    "access": "abstract",
+    "use": "Отправная точка для исследования чайной плёнки на глиняной поверхности.",
+    "limit": "Методика полностью не просмотрена. Не рекомендация не мыть чайник.",
+    "checked_on": "2026-10-05"
+  },
+  {
+    "id": "SC04",
+    "title": "The study of crystal-phase composition and pore structure for Dicaoqing-Zisha, compared with porcelain and pottery",
+    "publisher": "Ceramics International",
+    "language": "en",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0272884220337925",
+    "doi": "10.1016/j.ceramint.2020.12.178",
+    "access": "abstract",
+    "use": "Поиск измеряемых характеристик поровой структуры образцов.",
+    "limit": "Полный текст требуется до вывода о готовом изделии. Не доказательство подлинности по фотографии.",
+    "checked_on": "2026-10-05"
+  },
+  {
+    "id": "SC05",
+    "title": "Unveiling the science behind the tea bowls from the Jizhou kiln. Part I: Chemical compositions and the two-layer glazing technique",
+    "publisher": "Ceramics International",
+    "language": "en",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0272884218303511",
+    "doi": "10.1016/j.ceramint.2018.02.056",
+    "access": "abstract",
+    "use": "Материаловедческий подход к исторической глазури.",
+    "limit": "Не реконструировать технологический рецепт по аннотации.",
+    "checked_on": "2026-10-05"
+  },
+  {
+    "id": "SC06",
+    "title": "Black tea stain formed on the surface of teacups and pots. Part 1 — Study on the chemical composition and structure",
+    "publisher": "Food Chemistry",
+    "language": "en",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814606006030",
+    "doi": "10.1016/j.foodchem.2006.05.068",
+    "access": "abstract",
+    "use": "Исследование состава чайного налёта.",
+    "limit": "Не переносить экспериментальные условия на любой домашний налёт; не придумывать чистящее средство.",
+    "checked_on": "2026-10-05"
+  }
+]

@@ -1,16 +1,4 @@
 {
-  "model": {
-    "name": "gemini-3-pro-preview",
-    "maxSessionTurns": -1
-  },
-  "context": {
-    "fileName": "AGENTS.md"
-  },
-  "tools": {
-    "sandbox": true,
-    "allowed": ["run_shell_command(git)"]
-  },
-  "experimental": {
-    "enableAgents": true
-  }
+  "context": {"fileName": "AGENTS.md"},
+  "tools": {"sandbox": true}
 }

@@ -1,0 +1,27 @@
+name: Editorial checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5, checked 2026-10-05
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6, checked 2026-10-05
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit and repository checks
+        run: python -m unittest discover -s tests -v
+      - name: Validate committed article packages
+        run: |
+          for directory in articles/*/; do
+            python scripts/editorial.py check "$directory"
+          done

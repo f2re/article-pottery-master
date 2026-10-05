@@ -1,0 +1,2 @@
+description = "Подготовить редакционный пакет по действующим правилам"
+prompt = """Прочитай AGENTS.md и .agents/skills/pottery-editor/SKILL.md. Подготовь пакет по запросу пользователя, не публикуй и не заполняй human_approval за человека. Запрос: {{args}}"""

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "C1",
+    "text": "В опыте: порошок глазури 0,15 г, настой 15 мл, 80 °C, шесть часов.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Methods: preparation of glaze samples; analysis of tea catechins.",
+    "scope": "Описанный лабораторный протокол, не испытание готовой бытовой чаши.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C2",
+    "text": "У статьи опубликовано авторское исправление.",
+    "sources": [
+      "S2"
+    ],
+    "locator": "Author Correction, 25 July 2023, основной текст.",
+    "scope": "Исправление исходной статьи, не независимое подтверждение результата.",
+    "status": "verified",
+    "translation_checked": true
+  }
+]
