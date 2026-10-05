@@ -17,3 +17,6 @@ dist/
 .env.*
 !.env.example
 .gemini/settings.local.json
+
+**/.private/
+**/notes/

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "max_parallel_readers": 3,
+  "profiles": {
+    "note": {
+      "steps": [
+        "growth: читательский вопрос и один результат",
+        "research: проверить доступные доказательства; переиспользовать только после чтения",
+        "writer: короткий самостоятельный ответ",
+        "growth: выбранные версии",
+        "freeze: окончательные тексты и превью",
+        "evidence + reader: независимая приёмка",
+        "owner: одно решение",
+        "export: программа"
+      ],
+      "conditional_roles": []
+    },
+    "standard": {
+      "steps": [
+        "growth: намерение, соседние темы, формат",
+        "research: оригиналы или собственные записи",
+        "writer: цельный ответ",
+        "growth + art при illustrated: версии и изображения",
+        "freeze: окончательные тексты и превью",
+        "evidence + reader: независимая приёмка",
+        "owner: одно решение",
+        "export: программа"
+      ],
+      "conditional_roles": []
+    },
+    "research": {
+      "steps": [
+        "growth: вопрос и область ответа",
+        "research: полные оригиналы",
+        "science: методический разбор, не приёмка",
+        "writer: метод, результат, граница, польза",
+        "growth + art при illustrated: все версии",
+        "freeze: окончательные тексты и превью",
+        "evidence + reader + science: финальные независимые отзывы",
+        "owner: одно решение",
+        "export: программа"
+      ],
+      "conditional_roles": [
+        "pottery-science"
+      ]
+    }
+  }
+}

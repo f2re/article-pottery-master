@@ -12,12 +12,67 @@
   },
   {
     "id": "C2",
-    "text": "У статьи опубликовано авторское исправление.",
+    "text": "У работы опубликовано исправление: Mg заменено на Co в исходном PDF, в аннотации и выводах.",
     "sources": [
       "S2"
     ],
     "locator": "Author Correction, 25 July 2023, основной текст.",
     "scope": "Исправление исходной статьи, не независимое подтверждение результата.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C3",
+    "text": "Исследованы коммерческие глазури Oribe, Namako, Irabo и Toumei.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Methods / Preparation of glaze sample pieces, первый абзац.",
+    "scope": "Именно образцы указанного поставщика, не все глазури с такими названиями.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C4",
+    "text": "Настой без порошка после выдержки также изменял цвет; изменение при добавлении исследованных порошков отличалось.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Results and discussion, абзацы, начинающиеся Figure 3a reveals и Brownish black was observed.",
+    "scope": "Описанные образцы и протокол; цвет не равен оценке вкуса.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C5",
+    "text": "Содержание катехинов оценивали методом ВЭЖХ; Oribe, Namako и Irabo сильнее изменяли содержание ряда катехинов, а Toumei проявляла более избирательное действие.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Results and discussion, абзацы To clarify the reason и To set the amount; Methods / Characterization of tea solution.",
+    "scope": "Направление наблюдаемого результата, без реконструкции чисел из графика и без ранжирования потребительских чаш.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C6",
+    "text": "Описанные измерения не включают сравнительную дегустацию готовых чаш; статья делает более широкий вывод о вкусе, чем проверено таким тестом.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Methods / Degradation of tea solution on glazes; Characterization of tea solution; Conclusions, предпоследний абзац.",
+    "scope": "Редакционное сопоставление заявленного вывода с описанными методами, не утверждение отсутствия любых эффектов посуды.",
+    "status": "verified",
+    "translation_checked": true
+  },
+  {
+    "id": "C7",
+    "text": "Катехины относятся к полифенольным соединениям зелёного чая.",
+    "sources": [
+      "S1"
+    ],
+    "locator": "Introduction, первый абзац о catechins/polyphenols.",
+    "scope": "Определение группы веществ, не рекомендация о здоровье.",
     "status": "verified",
     "translation_checked": true
   }

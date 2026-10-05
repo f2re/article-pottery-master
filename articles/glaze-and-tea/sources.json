@@ -5,7 +5,9 @@
     "url": "https://www.nature.com/articles/s41598-023-37480-8",
     "language": "en",
     "access": "fulltext",
-    "checked_on": "2026-10-05"
+    "checked_on": "2026-10-05",
+    "kind": "publication",
+    "public_label": "Xin и соавт., 2023 — исследование"
   },
   {
     "id": "S2",
@@ -13,6 +15,8 @@
     "url": "https://www.nature.com/articles/s41598-023-39072-y",
     "language": "en",
     "access": "fulltext",
-    "checked_on": "2026-10-05"
+    "checked_on": "2026-10-05",
+    "kind": "publication",
+    "public_label": "Xin и соавт., 2023 — исправление"
   }
 ]

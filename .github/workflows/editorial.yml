@@ -25,3 +25,7 @@ jobs:
           for directory in articles/*/; do
             python scripts/editorial.py check "$directory"
           done
+      - name: Verify public export against source
+        run: |
+          output=$(python scripts/editorial.py export articles/glaze-and-tea)
+          python scripts/editorial.py verify-export "$output" --package articles/glaze-and-tea
